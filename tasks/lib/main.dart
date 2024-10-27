@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:tasks/firebase_options.dart';
 import 'package:tasks/task.dart';
 import 'package:tasks/form.dart';
+import 'package:tasks/testing/demo.dart';
+import 'package:tasks/testing/demo2.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -26,8 +28,10 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      initialRoute: '/tasks',
+      initialRoute: '/demo',
       routes: {
+        '/semo': (BuildContext context) => semo2(),
+        '/demo': (BuildContext context) => demo(),
         '/tasks': (BuildContext context) => const Task(),
         '/form': (BuildContext context) => const form(),
       },
