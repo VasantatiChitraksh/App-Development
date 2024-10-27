@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      initialRoute: '/demo',
+      initialRoute: '/tasks',
       routes: {
         '/semo': (BuildContext context) => semo2(),
         '/demo': (BuildContext context) => demo(),
